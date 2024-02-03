@@ -49,7 +49,10 @@ body{
     background: #32ba7c;
     cursor: pointer;
     z-index: 1;
+    color: #fff;
+    font-weight: 900;
     bottom: -35%;
+    text-align: center;
 }
 
 .red{
@@ -58,11 +61,59 @@ body{
     height: 20px;
     border-radius: 5px;
     left: 18%;
+    text-align: center;
     background: #32ba7c;
     cursor: pointer;
     z-index: 1;
+    color: #fff;
+    font-weight: 900;
     bottom: -35%;
     background-color: #ff2e09;
+}
+
+.blue1{
+    text-align: center;
+    position: absolute;
+    width: 30px;
+    height: 20px;
+    color: #fff;
+    font-weight: 900;
+    border-radius: 5px;
+    left: 40%;
+    cursor: pointer;
+    z-index: 1;
+    bottom: -35%;
+    background-color: #0984ff;
+}
+
+.blue2{
+    text-align: center;
+    position: absolute;
+    width: 30px;
+    height: 20px;
+    border-radius: 5px;
+    left: 51%;
+    cursor: pointer;
+    color: #fff;
+    font-weight: 900;
+    z-index: 1;
+    bottom: -35%;
+    background-color: #0984ff;
+}
+
+.blue3{
+    text-align: center;
+    position: absolute;
+    width: 30px;
+    color: #fff;
+    font-weight: 900;
+    height: 20px;
+    border-radius: 5px;
+    left: 62%;
+    cursor: pointer;
+    z-index: 1;
+    bottom: -35%;
+    background-color: #0984ff;
 }
 
 .fan .head{
@@ -107,13 +158,22 @@ body{
     z-index: 1;
 }
 
-.ani1{
+.ani{
+    animation: start infinite 3s linear forwards;
+}
+
+.ani3{
+    animation: start infinite 2s linear forwards;
+}
+
+.ani2{
     animation: start infinite 1s linear forwards;
 }
 
-/* #off{
-    animation: stopp infinite 1s linear forwards;
-} */
+.ani1{
+    animation: start infinite 0.5s linear forwards;
+}
+
 
 .fan-blades .blade {
     position: absolute;
