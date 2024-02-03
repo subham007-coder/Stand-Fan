@@ -12,7 +12,7 @@ startBtn.addEventListener("click", () => {
     startBtn.classList.toggle("green");
     startBtn.classList.add("red");
 
-    if (startBtn.classList == "red") {
+    if (startBtn.innerHTML == "On") {
         startBtn.innerHTML = "Off";
         // fanOn.classList.remove("ani");
         // fanOn.classList.add("aniOff");
