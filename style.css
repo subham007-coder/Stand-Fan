@@ -45,11 +45,24 @@ body{
     width: 30px;
     height: 20px;
     border-radius: 5px;
-    left: 30%;
+    left: 18%;
     background: #32ba7c;
     cursor: pointer;
     z-index: 1;
     bottom: -35%;
+}
+
+.red{
+    position: absolute;
+    width: 30px;
+    height: 20px;
+    border-radius: 5px;
+    left: 18%;
+    background: #32ba7c;
+    cursor: pointer;
+    z-index: 1;
+    bottom: -35%;
+    background-color: #ff2e09;
 }
 
 .fan .head{
@@ -94,9 +107,13 @@ body{
     z-index: 1;
 }
 
-#ani1{
+.ani1{
     animation: start infinite 1s linear forwards;
 }
+
+/* #off{
+    animation: stopp infinite 1s linear forwards;
+} */
 
 .fan-blades .blade {
     position: absolute;
@@ -167,7 +184,7 @@ body{
 #start:checked + div > .green{
     bottom: -36%;
 }
-#start:checked + div > .green:before {
+#start:checked + div > .green::after {
     content: "";
     position: absolute;
     top: 0;
@@ -190,3 +207,17 @@ body{
         transform: rotate(360deg);
     }
 }
+
+/* @keyframes stopp{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(0deg);
+    }
+}
+@keyframes off{
+    to{
+        transform: rotate(0deg);
+    }
+} */
